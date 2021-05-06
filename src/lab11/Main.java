@@ -5,7 +5,6 @@ import lab11.models.Rectangle;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 
 import static  java.lang.Math.*;
 
@@ -20,7 +19,7 @@ public class Main {
         Rectangle r1 = new Rectangle(3, 5);
         Rectangle r2 = new Rectangle(6, 22);
         Rectangle r3 = new Rectangle(8, 1);
-        Collection<Rectangle> list = new ArrayList<>(Arrays.asList(r1, r2, r3));
+        Iterable<Rectangle> list = new ArrayList<>(Arrays.asList(r1, r2, r3));
         list.forEach(rect -> System.out.println(rect));
     }
 
